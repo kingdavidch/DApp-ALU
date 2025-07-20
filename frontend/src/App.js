@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import "./App.css";
 
-// Replace with your deployed contract address after deployment
-const CONTRACT_ADDRESS = "YOUR_CONTRACT_ADDRESS_HERE";
+// Deployed contract address from environment variable or fallback
+const CONTRACT_ADDRESS = process.env.REACT_APP_CONTRACT_ADDRESS || "0x3905052fB9d1502B246442945Eb1DC9573Be4708";
 
 // Enhanced ABI for the advanced token contract
 const ABI = [

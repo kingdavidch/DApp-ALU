@@ -43,6 +43,7 @@ async function main() {
   console.log("1. Update the CONTRACT_ADDRESS in your frontend");
   console.log("2. Verify the contract on Etherscan if deploying to mainnet/testnet");
   console.log("3. Update your documentation with the new contract address");
+  console.log("\n📍 Current deployed contract: 0x3905052fB9d1502B246442945Eb1DC9573Be4708");
   
   return contractAddress;
 }

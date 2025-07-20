@@ -132,7 +132,12 @@ npm start
 
 Visit [http://localhost:3000](http://localhost:3000) to interact with your DApp!
 
-## 📱 DApp Usage Guide
+## � Screenshots
+
+![DApp Frontend Screenshot](screenshots/dapp-frontend-screenshot.png)
+*Complete tokenization system interface showing wallet connection, token information, staking, and token management features*
+
+## �📱 DApp Usage Guide
 
 ### 🔌 Connect Your Wallet
 1. Click "Connect Wallet" 
