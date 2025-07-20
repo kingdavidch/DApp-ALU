@@ -10,7 +10,7 @@ describe("MyToken Advanced Tokenization System", function () {
   beforeEach(async function () {
     [owner, addr1, addr2, addr3, feeCollector, minter] = await ethers.getSigners();
     MyToken = await ethers.getContractFactory("MyToken");
-    myToken = await MyToken.deploy(initialSupply, owner.address);
+    myToken = await MyToken.deploy(initialSupply);
     await myToken.waitForDeployment();
   });
 

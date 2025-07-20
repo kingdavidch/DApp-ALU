@@ -88,12 +88,11 @@ contract MyToken is ERC20, ERC20Burnable, ERC20Pausable, Ownable, ERC20Permit, R
     }
     
     constructor(
-        uint256 initialSupply,
-        address initialOwner
-    ) ERC20("Advanced MyToken", "AMTK") ERC20Permit("Advanced MyToken") Ownable(initialOwner) {
+        uint256 initialSupply
+    ) ERC20("Advanced MyToken", "AMTK") ERC20Permit("Advanced MyToken") Ownable(msg.sender) {
         require(initialSupply <= MAX_SUPPLY, "Initial supply exceeds max supply");
-        _mint(initialOwner, initialSupply);
-        feeCollector = initialOwner;
+        _mint(msg.sender, initialSupply);
+        feeCollector = msg.sender;
     }
     
     /**

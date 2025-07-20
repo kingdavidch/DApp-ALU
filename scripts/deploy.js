@@ -12,7 +12,7 @@ async function main() {
   
   console.log("Deploying token with initial supply:", ethers.formatUnits(initialSupply, 18), "AMTK");
   
-  const myToken = await MyToken.deploy(initialSupply, deployer.address);
+  const myToken = await MyToken.deploy(initialSupply);
   await myToken.waitForDeployment();
   
   const contractAddress = await myToken.getAddress();
